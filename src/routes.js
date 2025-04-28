@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/home';
-import Lista from './pages/lista';
-import Header from './components/header'
-import Erro from './pages/Erro';
-import ListaFavoritos from './pages/ListaFavoritos';
+import Home from './pages/Home';
+import Header from './components/header';
+import Lista from './pages/Lista';
+//import ListaFavoritos from './pages/ListaFavoritos';
+//import Erro from './pages/Erro';
 
 function RotasApp() {
     
@@ -12,10 +12,10 @@ function RotasApp() {
         <BrowserRouter>
         <Header />
             <Routes>
-            <Route path="/" element={ <home/> } />
-            <Route path="/filme/:id" element={ <lista/> } />
-            <Route path="/lista" element={ <ListaFavoritos/> } />
-            <Route path="*" element={ <Erro/>} />
+            <Route path="/" element={ <Home/> } />
+            <Route path="/filme/:id" element={ <Lista/> } />
+            {/*<Route path="/lista" element={ <ListaFavoritos/> } />
+            <Route path="*" element={ <Erro/>} />*/}
             </Routes>
         </BrowserRouter>
     )
