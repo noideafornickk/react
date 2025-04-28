@@ -4,8 +4,8 @@ function Header(){
     return (
         <header>
             <h2>HEADER</h2>
-            <link className="logo" to="/">Onfilmes</link>;
-           <link className="favoritos" to="/lista">Minha Lista</link>;
+            <Link className="logo" to="/">Onfilmes</Link>;
+           <Link className="favoritos" to="/lista">Minha Lista</Link>;
         </header>
         
 
